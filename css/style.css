@@ -1,0 +1,171 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgba(240, 240, 240, 0.85);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Add top padding to prevent content hiding behind navbar */
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.12), 0 1.5px 4px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2rem;
+  width: 80vw;
+  height: 80vh;
+  max-width: 1000px;
+  max-height: 900px;
+  margin: 2rem 0;
+  transition: box-shadow 0.2s;
+  overflow: auto;
+}
+
+/* Optional: Add a little hover effect for interactivity */
+.card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18), 0 3px 8px rgba(0, 0, 0, 0.13);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: none !important;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+}
+
+footer {
+  background: #f2f2f2;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 2rem;
+  border-top: none;
+  padding: 1rem 0;
+}
+
+.coming-soon {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 24px;
+  color: #ff0000;
+}
+
+/* Navbar: full width, no border-radius, white text */
+.navbar {
+  border-radius: 0;
+  background-color: #222;
+  background-image: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" fill="%23222"/><text x="8" y="28" font-size="24" font-family="monospace" fill="%2333d">{"<>"}</text></svg>');
+  background-repeat: repeat;
+  background-size: 40px 40px;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  width: 100vw;
+  height: 2.5vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  align-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0;
+}
+.navbar a:hover {
+  text-decoration: underline;
+  color: rgb(99, 99, 231);
+}
+
+.navbar,
+footer {
+  background-color: #222;
+  background-repeat: repeat;
+  background-size: 40px 40px;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Footer text color for contrast */
+footer {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 2rem;
+  border-top: none;
+  padding: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
