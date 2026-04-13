@@ -17,7 +17,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* Add top padding to prevent content hiding behind navbar */
   padding-top: 70px;
   padding-bottom: 40px;
 }
@@ -38,7 +37,6 @@ body {
   overflow: auto;
 }
 
-/* Optional: Add a little hover effect for interactivity */
 .card:hover {
   box-shadow:
     0 12px 40px rgba(0, 0, 0, 0.18),
@@ -90,18 +88,15 @@ p {
 }
 
 footer {
-  background: #f2f2f2;
+  background: #222;
   padding: 1rem 0;
   text-align: center;
-  border-top: 1px solid #e0e0e0;
   position: relative;
   bottom: 0;
   width: 100%;
   color: #fff;
   margin-bottom: 0;
-  margin-top: 2rem;
-  border-top: none;
-  padding: 1rem 0;
+  margin-top: 0;
 }
 
 .coming-soon {
@@ -111,7 +106,7 @@ footer {
   color: #ff0000;
 }
 
-/* Navbar: full width, no border-radius, white text */
+/* Navbar */
 .navbar {
   border-radius: 0;
   background-color: #222;
@@ -154,15 +149,6 @@ footer {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-/* Footer text color for contrast */
-footer {
-  color: #fff;
-  margin-bottom: 0;
-  margin-top: 2rem;
-  border-top: none;
-  padding: 1rem 0;
-}
-
 @media (max-width: 600px) {
   .container {
     width: 95%;
@@ -173,7 +159,106 @@ footer {
     margin: 10px 0;
   }
 }
-/* Card container (optional grid layout) */
+
+/* ─── Skills tables ─────────────────────────────────────────────── */
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+}
+
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: #fff;
+}
+
+.skills-table thead tr {
+  background: #f7f7f7;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.skills-table th {
+  padding: 10px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 0.03em;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+
+.skills-table td {
+  padding: 10px 16px;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle;
+}
+
+.skills-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.skills-table tbody tr:hover {
+  background: #fafafa;
+}
+
+/* ─── Proficiency badges ─────────────────────────────────────────── */
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.badge-advanced {
+  background: #e6f4ea;
+  color: #1e6e32;
+}
+
+.badge-intermediate-plus {
+  background: #e8f0fe;
+  color: #1a56c4;
+}
+
+.badge-intermediate {
+  background: #e8f3fe;
+  color: #1565a8;
+}
+
+.badge-beginner-plus {
+  background: #fff4e0;
+  color: #a05a00;
+}
+
+.badge-beginner {
+  background: #f3f3f3;
+  color: #666;
+}
+
+/* ─── Skill lists ────────────────────────────────────────────────── */
+
+.skill-list {
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.skill-list li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ─── Project cards ──────────────────────────────────────────────── */
+
 .main-content ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -182,7 +267,6 @@ footer {
   list-style: none;
 }
 
-/* Card styling */
 .project-card {
   background: #ffffff;
   padding: 20px;
@@ -198,19 +282,16 @@ footer {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-/* Title */
 .project-card h3 {
   margin-top: 0;
   color: #333;
 }
 
-/* Description */
 .project-description {
   margin-bottom: 15px;
   color: #555;
 }
 
-/* Sections */
 .project-section {
   margin-bottom: 10px;
 }
@@ -225,7 +306,6 @@ footer {
   color: #444;
 }
 
-/* Link button */
 .project-link {
   display: inline-block;
   margin-top: 10px;
